@@ -78,7 +78,7 @@ class TasksController extends Controller
     public function edit($id)
     {
         //idの値でタスクを検索して取得
-        $task = Task::findOrFail($task);
+        $task = Task::findOrFail($id);
         
         //タスク編集ビューで表示
         return view('tasks.edit',[
