@@ -9,6 +9,7 @@
             <thead>
                 <tr>
                     <th>id</th>
+                    <th>ステータス</th>
                     <th>タスク</th>
                 </tr>
             </thead>
@@ -17,6 +18,7 @@
                 <tr>
                     {{-- タスク詳細ページのリンク --}}
                     <td>{!! link_to_route('tasks.show', $task->id, ['task' => $task->id]) !!}</td>
+                    <td>{{ $task->status }}</td>
                     <td>{{ $task->content }}</td>
                 </tr>
                 @endforeach
@@ -27,4 +29,5 @@
     
     {{-- タスク作成ページへのリンク --}}
     {!! link_to_route('tasks.create', '新規タスクの作成', [], ['class' => 'btn btn-info']) !!}
+    
 @endsection
