@@ -14,13 +14,13 @@
                 </div>
                 
                 <div class="form-group">
-                    {!! Form::label('content', 'タスク:') !!}
-                    {!! Form::text('content', null, ['class' => 'form-control']) !!}
+                    {!! Form::label('content', 'コンテント:') !!}
+                    {!! Form::text('cotent', null, ['class' => 'form-control']) !!}
                 </div>
                 
                 {!! Form::submit('作成', ['class' => 'btn-info']) !!}
                 
-            {!! Form::close() !!}
+            {!! Form::close() !!}    
         </div>
     </div>
 
